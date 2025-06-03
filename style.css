@@ -10,10 +10,33 @@
 body{
     height: 100vh;
     width: 100%;
-    background: #000;
-    background: url(home.png) no-repeat center / cover;
-    padding: 50px;
+    background: none;
     overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 50px;
+}
+
+#home {
+    background: url('home.png') no-repeat center/cover;
+}
+
+#about {
+    background: url('about.jpg') no-repeat center/cover;
+}
+  
+#portfolio {
+    background: url('portfolio.jpg') no-repeat center/cover;
+}
+  
+#service {
+    background: url('service.jpg') no-repeat center/cover;
+}
+  
+#contact {
+    background: url('contact.png') no-repeat center/cover;
 }
   
 .container {
