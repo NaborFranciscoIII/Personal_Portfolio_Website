@@ -205,12 +205,14 @@ header {
 }
 
 .about-me, .education, .skills {
-    border: 2px solid white;
     border-radius: 10px;
     padding: 40px;
     margin: 20px 0;
     color: white;
     pointer-events: none;
+    box-shadow:
+        0 0 40px rgba(255, 255, 255, 0.05),
+        0 0 80px rgba(255, 255, 255, 0.1);
 }
 
 .arrow-up {
@@ -226,7 +228,8 @@ header {
 .nav-arrow {
     position: relative;
     width: 100%;
-    height: 0; 
+    height: 0;
+    padding: 50px; 
 }
 
 .nav-arrow i {
@@ -236,6 +239,57 @@ header {
   }
 
 .nav-arrow i:hover {
-    color: brown;
     transform: scale(1.2);
-  }
+}
+
+/* portfolio section*/
+
+#portfolio .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#portfolio .temp-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    color: black;
+    box-shadow:
+        0 0 40px rgba(255, 255, 255, 0.05),
+        0 0 80px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+/* service section  */
+
+#service .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#service .temp-content {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    color: white;
+    box-shadow:
+        0 0 40px rgba(255, 255, 255, 0.05),
+        0 0 80px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+/* contact section  */
