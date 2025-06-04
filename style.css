@@ -7,6 +7,10 @@
     font-family: "poppins",sans-serif;
 } 
 
+html {
+    scroll-behavior: smooth;  
+}
+
 body{
     height: 100vh;
     width: 100%;
@@ -18,6 +22,8 @@ section {
     min-height: 100vh;
     padding: 50px;
 }
+
+/* section background */
 
 #home {
     background: url('home.png') no-repeat center/cover;
@@ -39,6 +45,8 @@ section {
     background: url('contact.png') no-repeat center/cover;
 }
   
+
+/* home section */
 .container {
     width: 95%;
     height: 85vh;
@@ -190,3 +198,44 @@ header {
     backdrop-filter: blur(10px);
 }
 
+/* about section */
+#about .container {
+    position: relative;
+    padding: 50px;
+}
+
+.about-me, .education, .skills {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0;
+    color: white;
+    pointer-events: none;
+}
+
+.arrow-up {
+    left: 20px;
+    bottom: 20px;
+}
+  
+.arrow-down {
+    position: absolute;
+    right: 20px;
+}
+  
+.nav-arrow {
+    position: relative;
+    width: 100%;
+    height: 0; 
+}
+
+.nav-arrow i {
+    color: white;
+    font-size: 3.5rem;
+    transition: 0.3s ease;
+  }
+
+.nav-arrow i:hover {
+    color: brown;
+    transform: scale(1.2);
+  }
